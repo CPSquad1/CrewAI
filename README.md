@@ -959,7 +959,7 @@ Before submitting your PR:
 
 **Have Questions?**
 - Email: cpsquad@charusat.ac.in
-- Or contact Nandit Kalaria (7990785212) or Nirmit Patel (7016779496)
+- Or contact Sujal Parsana (7567180754) or Mit Jakasaniya (7990343887)
 
 ### Response Times
 - General questions: 24-48 hours
