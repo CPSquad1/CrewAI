@@ -26,19 +26,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-background to-slate-900 text-foreground p-4 sm:p-6 md:p-8">
-      {/* Decorative SVG elements */}
-      <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 rounded-full bg-primary/10 blur-3xl animate-blob" />
-      <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 rounded-full bg-secondary/10 blur-3xl animate-blob animation-delay-4000" />
-
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-background to-slate-900 text-foreground p-4 sm:p-6 md:p-8">
+      
       <div className="flex flex-col items-center w-full max-w-4xl z-10">
         {/* Hero Section */}
         <div className="text-center">
-          <Logo className="w-20 h-20 mx-auto mb-6 text-primary opacity-0 animate-fade-in-down" />
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 opacity-0 animate-fade-in-down animation-delay-200">
+          <Logo className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 text-primary opacity-0 animate-fade-in-down" />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 opacity-0 animate-fade-in-down animation-delay-200">
             AI-Powered Team Collaboration
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in-down animation-delay-400">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in-down animation-delay-400">
             Work smarter with AI-driven project management. Let CrewAI handle scheduling, task assignment, and progress tracking.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up animation-delay-600">
@@ -57,7 +54,7 @@ const Home = () => {
 
         {/* Features Section */}
         {/* //INFO: Dummy data ref:readme */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {features.map((feature, index) => (
             <div
               key={feature.title}
