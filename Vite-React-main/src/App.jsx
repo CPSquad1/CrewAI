@@ -1,14 +1,20 @@
-import './App.css'
-import { Button } from './components/ui/button'
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
 
 function App() {
-
   return (
-    <>
-      <h1>This is a custom Vite+React+shadcn template</h1>
-      <Button>This is a shadcn button </Button>
-    </>
-  )
+    <main className="dark">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </main>
+  );
 }
 
-export default App
+export default App;
