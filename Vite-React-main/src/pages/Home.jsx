@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import Logo from '@/components/Logo';
+import Logo from '@/components/ui/Logo';
 
 const Home = () => {
   const isAuthenticated = false; //NOTE:changing this to true will show go to dashboard option
