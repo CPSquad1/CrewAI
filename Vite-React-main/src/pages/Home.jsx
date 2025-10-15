@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import Logo from '@/components/ui/Logo';
+import Logo from '@/components/Logo';
 
 const Home = () => {
   const isAuthenticated = false; //NOTE:changing this to true will show go to dashboard option
@@ -19,6 +20,10 @@ const Home = () => {
       description: 'Visualize project progress with smart Kanban boards and analytics.',
     },
   ];
+
+  useEffect(() => {
+    document.title = 'CrewAI | CPSquad';
+  }, []);
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-background to-slate-900 text-foreground p-4 sm:p-6 md:p-8">
